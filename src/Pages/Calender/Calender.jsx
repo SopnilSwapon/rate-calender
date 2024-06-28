@@ -16,6 +16,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { FaUsers } from "react-icons/fa6";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -37,17 +39,17 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
 
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-  }
+  // function createData(name, calories, fat, carbs, protein) {
+  //   return { name, calories, fat, carbs, protein };
+  // }
 
-  const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-  ];
+  // const rows = [
+  //   createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
+  //   createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
+  //   createData('Eclair', 262, 16.0, 24, 6.0),
+  //   createData('Cupcake', 305, 3.7, 67, 4.3),
+  //   createData('Gingerbread', 356, 16.0, 49, 3.9),
+  // ];
 
 dayjs.extend(customParseFormat);
 dayjs.extend(isBetween);
@@ -70,37 +72,68 @@ export default function SingleInputDateRangePicker() {
     }
   };
  console.log(dates);
+ const {data:rooms=[], isPending, error} = useQuery({
+  queryKey: ['rooms'],
+  queryFn: async () =>{
+    const res =await fetch('https://api.bytebeds.com/api/v1/property/1/room/rate-calendar/assessment?start_date=2024-05-01&end_date=2024-05-14');
+    return res.json();
+  }
+})
+if (isPending) return 'Loading...'
+
+if (error) return 'An error has occurred: ' + error.message;
+console.log(rooms?.data);
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <LocalizationProvider  dateAdapter={AdapterDayjs}>
       <DemoContainer components={['SingleInputDateRangeField']}>
-        <DateRangePicker
+        <DateRangePicker className='w-[25%]'
           slots={{ field: SingleInputDateRangeField }}
           name="allowedRange"
           onChange={handleDateChange}
         />
-        <h2>room information coming soon</h2>
         <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
+          <StyledTableCell align='right'>Information about room</StyledTableCell>
             {
                 dates.map((date, index) =><StyledTableCell align='right' key={index}>{date.slice(0, 2)} <br /> {date.slice(3, 7)}</StyledTableCell>)
             }
           </TableRow>
         </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
+       {
+        rooms?.data.map((room, index)=> <TableBody key={index}>
+          {
+            <StyledTableRow className='text-xl font-bold text-nowrap'>{room?.name}</StyledTableRow>
+          }
+            <StyledTableRow>
               <StyledTableCell component="th" scope="row">
-                {row.name}
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+                <p>Room status</p>
+              </StyledTableCell>              
+              {
+                room?.inventory_calendar?.map((roomStatus, index) =><StyledTableCell align="right" key={index} className='bg-green-700 !text-white'>{roomStatus?.status === true ? 'Open' : 'close'}</StyledTableCell>)
+              }
             </StyledTableRow>
-          ))}
-        </TableBody>
+            <StyledTableRow>
+              <StyledTableCell component="th" scope="row">
+                <p>Rooms Sell</p>
+              </StyledTableCell>              
+              {
+                room?.inventory_calendar?.map((isSell, index) =><StyledTableCell align="right" key={index}>{isSell?.available ? isSell?.available : 0}</StyledTableCell>)
+              }
+            </StyledTableRow>
+            <StyledTableRow>
+              <StyledTableCell component="th" scope="row">
+                <p>Net Booked</p>
+              </StyledTableCell>              
+              {
+                room?.inventory_calendar?.map((isBooked, index) =><StyledTableCell align="right" key={index}>{isBooked?.booked ? isBooked?.booked : 0}</StyledTableCell>)
+              }
+            </StyledTableRow>
+            
+        </TableBody>)
+       }
+
       </Table>
     </TableContainer>
       </DemoContainer>

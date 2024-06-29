@@ -82,7 +82,7 @@ export default function SingleInputDateRangePicker() {
   };
 
   useEffect(() => {
-    handleDateChange([dayjs(), dayjs().add(15, 'day')]);
+    handleDateChange([dayjs(), dayjs().add(20, 'day')]);
   }, []);
 
   const { data: rooms = [], isLoading, error } = useQuery({
@@ -101,19 +101,22 @@ export default function SingleInputDateRangePicker() {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={['SingleInputDateRangeField']}>
-        <DateRangePicker
-          className='w-[25%]'
+       <h2 className='text-3xl font-bold pl-5 mt-2'>Room Rates Calendar</h2>
+      <DemoContainer  components={['SingleInputDateRangeField']}>
+       <div className='pl-5'>
+       <DateRangePicker
+          className='w-full md:w-[30%] lg:w-[20%]'
           slots={{ field: SingleInputDateRangeField }}
           name="allowedRange"
           value={dateRange}
           onChange={handleDateChange}
         />
-        <StyledTableContainer component={Paper}>
+       </div>
+        <StyledTableContainer className='p-5 pt-0 font-bold' component={Paper}>
           <Table stickyHeader aria-label="customized table">
             <StickyTableHead>
               <TableRow>
-                <StyledTableCell align='right'>Date</StyledTableCell>
+                <StyledTableCell>Date</StyledTableCell>
                 {dates.map((date, index) => (
                   <StyledTableCell align='right' key={index}>{date.split(', ')[0]} <br /> {date.split(', ')[1]}</StyledTableCell>
                 ))}
@@ -162,7 +165,7 @@ export default function SingleInputDateRangePicker() {
                         <MinLenghtRow minLengthInfo={plan}></MinLenghtRow>
                       </StyledTableRow>
                       <StyledTableRow key={`reservation-${idx}`}>
-                        <StyledTableCell component="th" scope="row">Min. advance reservation</StyledTableCell>
+                        <StyledTableCell className='text-nowrap' component="th" scope="row">Min. advance reservation</StyledTableCell>
                         <ReservationRow reservationInfo={plan}></ReservationRow>
                       </StyledTableRow>
                     </>

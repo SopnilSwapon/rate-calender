@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
@@ -45,6 +46,7 @@ dayjs.extend(customParseFormat);
 dayjs.extend(isBetween);
 
 export default function SingleInputDateRangePicker() {
+  const [dateRange, setDateRange] = useState([dayjs(), dayjs().add(15, 'day')]);
   const [dates, setDates] = useState([]);
 
   const handleDateChange = (newValue) => {
@@ -58,9 +60,14 @@ export default function SingleInputDateRangePicker() {
         datesArray.push(`${dayOfMonth}, ${dayName}`);
         currentDate = currentDate.add(1, 'day');
       }
+      setDateRange(newValue);
       setDates(datesArray);
     }
   };
+
+  useEffect(() => {
+    handleDateChange([dayjs(), dayjs().add(15, 'day')]);
+  }, []);
 
   const { data: rooms = [], isLoading, error } = useQuery({
     queryKey: ['rooms'],
@@ -76,8 +83,6 @@ export default function SingleInputDateRangePicker() {
   if (isLoading) return 'Loading...';
   if (error) return `An error has occurred: ${error.message}`;
 
-
-
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={['SingleInputDateRangeField']}>
@@ -85,6 +90,7 @@ export default function SingleInputDateRangePicker() {
           className='w-[25%]'
           slots={{ field: SingleInputDateRangeField }}
           name="allowedRange"
+          value={dateRange}
           onChange={handleDateChange}
         />
         <TableContainer component={Paper}>

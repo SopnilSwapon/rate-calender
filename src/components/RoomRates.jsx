@@ -12,9 +12,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
 const RoomRates = ({roomRates}) => {
-    console.log(roomRates);
    const rates = roomRates?.calendar.map(rates =>rates?.rate);
-   console.log(rates);
     return (
         
            <>

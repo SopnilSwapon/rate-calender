@@ -12,9 +12,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
       const MinLenghtRow = ({minLengthsInfo}) => {
-    console.log(minLengthsInfo);
     const minLengths = minLengthsInfo?.calendar.map(minLength =>minLength?.min_length);
-    // console.log(minLength);
     return (
         <>
             {

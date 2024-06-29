@@ -12,7 +12,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
       const ReservationRow = ({reservationInfo}) => {
-    console.log(reservationInfo);
     const reservationData = reservationInfo?.calendar.map(minLength =>minLength?.reservation_deadline);
     return (
         <>

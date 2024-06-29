@@ -1,8 +1,6 @@
-# React + Vite
+# Room Calendar Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+This project displays a room calendar with occupancy, availability, and rate plans. The data is fetched from a JSON response and displayed in a tabular format using React.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Link: https://66806dac556142773569a157--stunning-cranachan-bc9883.netlify.app/

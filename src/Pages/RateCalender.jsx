@@ -21,6 +21,8 @@ import { FaUsers } from "react-icons/fa6";
 import MinLenghtRow from '../components/MinLenghtRow';
 import ReservationRow from '../components/ReservationRow';
 import RoomRates from '../components/RoomRates';
+import loader from '../../public/Animation - 1717751158249 (1).json'
+import Lottie from 'lottie-react';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -96,7 +98,7 @@ export default function SingleInputDateRangePicker() {
     }
   });
 
-  if (isLoading) return 'Loading...';
+  if (isLoading) return <Lottie className='w-[20%]  mt-20 mx-auto' animationData={loader}></Lottie>;
   if (error) return `An error has occurred: ${error.message}`;
 
   return (

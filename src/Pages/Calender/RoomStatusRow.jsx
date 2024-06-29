@@ -1,5 +1,6 @@
-import { TableCell, tableCellClasses } from "@mui/material";
-import styled from "styled-components";
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import { styled } from '@mui/material/styles';
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -10,13 +11,19 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
       fontSize: 14,
     },
   }));
-const RoomStatusRow = ({roomStatus}) => {
-    console.log(roomStatus.status);
+const RoomStatusRow = ({roomRates}) => {
+    console.log(roomRates);
+   const rates = roomRates?.calendar.map(rates =>rates?.rate);
+   console.log(rates);
+//    const rate = rates.map(rate =>rate)
+//    console.log(rate);
     return (
-        <div>
-            {/* <h2></h2> */}
-            <StyledTableCell align="right">Room Status: {roomStatus?.status ==true ? 'Open' : 'Close'}</StyledTableCell>
-        </div>
+        
+           <>
+            {
+                rates.map((rate, idx) =><StyledTableCell key={idx}>{rate}</StyledTableCell>)
+            }
+           </>
     );
 };
 

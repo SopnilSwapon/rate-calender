@@ -1,0 +1,1017 @@
+{
+    "code": "Succeed",
+    "message": "Room Calendar Fetched Successfully!",
+    "data": [
+      {
+        "id": "2",
+        "name": "Canary Delux Double",
+        "occupancy": 2,
+        "inventory_calendar": [
+          {
+            "id": "971",
+            "date": "2024-04-30T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "975",
+            "date": "2024-05-01T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "979",
+            "date": "2024-05-02T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "983",
+            "date": "2024-05-03T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "987",
+            "date": "2024-05-04T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "991",
+            "date": "2024-05-05T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "995",
+            "date": "2024-05-06T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "999",
+            "date": "2024-05-07T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1003",
+            "date": "2024-05-08T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1007",
+            "date": "2024-05-09T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1011",
+            "date": "2024-05-10T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1015",
+            "date": "2024-05-11T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1019",
+            "date": "2024-05-12T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1023",
+            "date": "2024-05-13T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1027",
+            "date": "2024-05-14T18:00:00.000Z",
+            "available": 10,
+            "status": true,
+            "booked": 0
+          }
+        ],
+        "rate_plans": [
+          {
+            "id": 2,
+            "name": "Standerd Rate",
+            "calendar": [
+              {
+                "id": "221",
+                "date": "2024-04-30T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "222",
+                "date": "2024-05-01T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "223",
+                "date": "2024-05-02T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "224",
+                "date": "2024-05-03T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "225",
+                "date": "2024-05-04T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "226",
+                "date": "2024-05-05T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "227",
+                "date": "2024-05-06T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "228",
+                "date": "2024-05-07T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "229",
+                "date": "2024-05-08T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "230",
+                "date": "2024-05-09T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "231",
+                "date": "2024-05-10T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "232",
+                "date": "2024-05-11T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "233",
+                "date": "2024-05-12T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "234",
+                "date": "2024-05-13T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "235",
+                "date": "2024-05-14T18:00:00.000Z",
+                "rate": 2999,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Canary Family Suite",
+        "occupancy": 4,
+        "inventory_calendar": [
+          {
+            "id": "973",
+            "date": "2024-04-30T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "977",
+            "date": "2024-05-01T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "981",
+            "date": "2024-05-02T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "985",
+            "date": "2024-05-03T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "989",
+            "date": "2024-05-04T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "993",
+            "date": "2024-05-05T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "997",
+            "date": "2024-05-06T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1001",
+            "date": "2024-05-07T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1005",
+            "date": "2024-05-08T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1009",
+            "date": "2024-05-09T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1013",
+            "date": "2024-05-10T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1017",
+            "date": "2024-05-11T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1021",
+            "date": "2024-05-12T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1025",
+            "date": "2024-05-13T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1029",
+            "date": "2024-05-14T18:00:00.000Z",
+            "available": 4,
+            "status": true,
+            "booked": 0
+          }
+        ],
+        "rate_plans": [
+          {
+            "id": 3,
+            "name": "Secondary",
+            "calendar": [
+              {
+                "id": "961",
+                "date": "2024-04-30T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "962",
+                "date": "2024-05-01T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "963",
+                "date": "2024-05-02T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "964",
+                "date": "2024-05-03T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "965",
+                "date": "2024-05-04T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "966",
+                "date": "2024-05-05T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "967",
+                "date": "2024-05-06T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "968",
+                "date": "2024-05-07T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "969",
+                "date": "2024-05-08T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "970",
+                "date": "2024-05-09T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "971",
+                "date": "2024-05-10T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "972",
+                "date": "2024-05-11T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "973",
+                "date": "2024-05-12T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "974",
+                "date": "2024-05-13T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              },
+              {
+                "id": "975",
+                "date": "2024-05-14T18:00:00.000Z",
+                "rate": 5000,
+                "min_length_of_stay": 23,
+                "reservation_deadline": 2
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Standerd Rate",
+            "calendar": [
+              {
+                "id": "404",
+                "date": "2024-04-30T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "405",
+                "date": "2024-05-01T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "406",
+                "date": "2024-05-02T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "407",
+                "date": "2024-05-03T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "408",
+                "date": "2024-05-04T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "409",
+                "date": "2024-05-05T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "410",
+                "date": "2024-05-06T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "411",
+                "date": "2024-05-07T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "412",
+                "date": "2024-05-08T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "413",
+                "date": "2024-05-09T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "414",
+                "date": "2024-05-10T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "415",
+                "date": "2024-05-11T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "416",
+                "date": "2024-05-12T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "417",
+                "date": "2024-05-13T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "418",
+                "date": "2024-05-14T18:00:00.000Z",
+                "rate": 6000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1",
+        "name": "Canary Single",
+        "occupancy": 1,
+        "inventory_calendar": [
+          {
+            "id": "974",
+            "date": "2024-04-30T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "978",
+            "date": "2024-05-01T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "982",
+            "date": "2024-05-02T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "986",
+            "date": "2024-05-03T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "990",
+            "date": "2024-05-04T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "994",
+            "date": "2024-05-05T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "998",
+            "date": "2024-05-06T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1002",
+            "date": "2024-05-07T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1006",
+            "date": "2024-05-08T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1010",
+            "date": "2024-05-09T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1014",
+            "date": "2024-05-10T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1018",
+            "date": "2024-05-11T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1022",
+            "date": "2024-05-12T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1026",
+            "date": "2024-05-13T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          },
+          {
+            "id": "1030",
+            "date": "2024-05-14T18:00:00.000Z",
+            "available": 3,
+            "status": true,
+            "booked": 0
+          }
+        ],
+        "rate_plans": [
+          {
+            "id": 2,
+            "name": "Standerd Rate",
+            "calendar": [
+              {
+                "id": "618",
+                "date": "2024-04-30T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "619",
+                "date": "2024-05-01T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "620",
+                "date": "2024-05-02T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "621",
+                "date": "2024-05-03T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "622",
+                "date": "2024-05-04T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "623",
+                "date": "2024-05-05T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "624",
+                "date": "2024-05-06T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "625",
+                "date": "2024-05-07T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "626",
+                "date": "2024-05-08T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "627",
+                "date": "2024-05-09T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "628",
+                "date": "2024-05-10T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "629",
+                "date": "2024-05-11T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "630",
+                "date": "2024-05-12T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "631",
+                "date": "2024-05-13T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": "632",
+                "date": "2024-05-14T18:00:00.000Z",
+                "rate": 2000,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Delux Triple",
+        "occupancy": 2,
+        "inventory_calendar": [
+          {
+            "id": null,
+            "date": "2024-04-30T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-01T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-02T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-03T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-04T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-05T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-06T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-07T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-08T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-09T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-10T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-11T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-12T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-13T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          },
+          {
+            "id": null,
+            "date": "2024-05-14T18:00:00.000Z",
+            "available": null,
+            "status": null,
+            "booked": null
+          }
+        ],
+        "rate_plans": [
+          {
+            "id": 2,
+            "name": "Standerd Rate",
+            "calendar": [
+              {
+                "id": null,
+                "date": "2024-04-30T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-01T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-02T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-03T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-04T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-05T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-06T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-07T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-08T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-09T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-10T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-11T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-12T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-13T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              },
+              {
+                "id": null,
+                "date": "2024-05-14T18:00:00.000Z",
+                "rate": null,
+                "min_length_of_stay": null,
+                "reservation_deadline": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

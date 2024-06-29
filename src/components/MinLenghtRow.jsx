@@ -11,21 +11,20 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
       fontSize: 14,
     },
   }));
-const RoomStatusRow = ({roomRates}) => {
-    console.log(roomRates);
-   const rates = roomRates?.calendar.map(rates =>rates?.rate);
-   console.log(rates);
+      const MinLenghtRow = ({minLengthsInfo}) => {
+    console.log(minLengthsInfo);
+    const minLengths = minLengthsInfo?.calendar.map(minLength =>minLength?.min_length);
+    // console.log(minLength);
     return (
-        
-           <>
+        <>
             {
-                rates.map((rate, idx) =><StyledTableCell key={idx}>{rate}</StyledTableCell>)
+                minLengths.map((minLength, idx) =><StyledTableCell key={idx}>{minLength == null ? '0' : minLength}</StyledTableCell>)
             }
-           </>
+        </>
     );
 };
 
-export default RoomStatusRow;
-RoomStatusRow.propTypes = {
-  roomRates: PropTypes.object,
-};
+export default MinLenghtRow;
+MinLenghtRow.propTypes = {
+    minLengthsInfo: PropTypes.object,
+  };

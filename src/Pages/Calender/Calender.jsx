@@ -20,6 +20,8 @@ import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { FaUsers } from "react-icons/fa6";
 import RoomStatusRow from './RoomStatusRow';
+import MinLenghtRow from '../../components/MinLenghtRow';
+import ReservationRow from '../../components/ReservationRow';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -140,9 +142,17 @@ export default function SingleInputDateRangePicker() {
                     room?.rate_plans?.map((roomRates, idx) => <RoomStatusRow key={idx} roomRates={roomRates}></RoomStatusRow>)
                   }
                 </StyledTableRow>
+                <StyledTableRow>
+                  <StyledTableCell component="th" scope="row">
+                    <p>Min.length of Stay</p>
+                  </StyledTableCell>
+                  {
+                    room?.rate_plans?.map((minLengthsInfo, idx) => <MinLenghtRow key={idx} minLengthsInfo={minLengthsInfo}></MinLenghtRow>)
+                  }
+                </StyledTableRow>
+                
               </TableBody>
             ))}
-            {/* </TableBody> */}
           </Table>
         </TableContainer>
       </DemoContainer>

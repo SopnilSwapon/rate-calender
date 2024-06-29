@@ -1,5 +1,4 @@
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import React from 'react';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
 import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
@@ -19,9 +18,9 @@ import Paper from '@mui/material/Paper';
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { FaUsers } from "react-icons/fa6";
-import RoomStatusRow from './RoomStatusRow';
 import MinLenghtRow from '../../components/MinLenghtRow';
 import ReservationRow from '../../components/ReservationRow';
+import RoomRates from '../../components/RoomRates';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -98,7 +97,6 @@ export default function SingleInputDateRangePicker() {
                 ))}
               </TableRow>
             </TableHead>
-            {/* <TableBody> */}
             {rooms?.data?.map((room, index) => (
               <TableBody key={index}>
                 {
@@ -134,23 +132,34 @@ export default function SingleInputDateRangePicker() {
                     </StyledTableCell>
                   ))}
                 </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    <p>Standard Rate <br /> <span className='flex items-center gap-2'><FaUsers className='text-green-500' /> X {room?.occupancy}</span></p>
-                  </StyledTableCell>
-                  {
-                    room?.rate_plans?.map((roomRates, idx) => <RoomStatusRow key={idx} roomRates={roomRates}></RoomStatusRow>)
-                  }
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    <p>Min.length of Stay</p>
-                  </StyledTableCell>
-                  {
-                    room?.rate_plans?.map((minLengthsInfo, idx) => <MinLenghtRow key={idx} minLengthsInfo={minLengthsInfo}></MinLenghtRow>)
-                  }
-                </StyledTableRow>
-                
+                {
+                  room?.rate_plans?.map((plan, idx) => <>
+                    <StyledTableRow>
+                      <StyledTableCell component="th" scope="row">
+                        <p>{plan?.name} <br /> <span className='flex items-center gap-2'><FaUsers className='text-green-500' /> X {room?.occupancy}</span></p>
+                      </StyledTableCell>
+                      
+                         <RoomRates key={idx} roomRates={plan}></RoomRates>
+                      
+                    </StyledTableRow>
+                    <StyledTableRow>
+                      <StyledTableCell component="th" scope="row">
+                        <p>Min.length of Stay</p>
+                      </StyledTableCell>
+                      {
+                        <MinLenghtRow key={idx} minLegthsInfo={plan}></MinLenghtRow>
+                      }
+                    </StyledTableRow>
+                    <StyledTableRow>
+                      <StyledTableCell component="th" scope="row">
+                        <p>Min. advance reservation</p>
+                      </StyledTableCell>
+                      
+                         <ReservationRow key={idx} reservationInfo={plan}></ReservationRow>
+                      
+                    </StyledTableRow>
+                  </>)
+                }
               </TableBody>
             ))}
           </Table>

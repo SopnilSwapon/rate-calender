@@ -4,19 +4,19 @@ import PropTypes from 'prop-types'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
+        backgroundColor: theme.palette.common.black,
+        color: theme.palette.common.white,
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: 14,
+        fontSize: 14,
     },
-  }));
-      const MinLenghtRow = ({minLengthsInfo}) => {
-    const minLengths = minLengthsInfo?.calendar.map(minLength =>minLength?.min_length);
+}));
+const MinLenghtRow = ({ minLengthInfo }) => {
+    const minLengths = minLengthInfo?.calendar.map(minLength => minLength?.min_length_of_stay);
     return (
         <>
             {
-                minLengths?.map((minLength, idx) =><StyledTableCell key={idx}>{minLength == null ? '0' : minLength}</StyledTableCell>)
+                minLengths?.map((minLength, idx) => <StyledTableCell key={idx}>{minLength == null ? '0' : minLength}</StyledTableCell>)
             }
         </>
     );
@@ -24,5 +24,5 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 
 export default MinLenghtRow;
 MinLenghtRow.propTypes = {
-    minLengthsInfo: PropTypes.object,
-  };
+    minLengthInfo: PropTypes.object,
+};
